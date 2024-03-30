@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');   // we import the (mongoose) library here:
 mongoose.set('strictQuery', true);     // we set the (strictQuery) property of the (mongoose) library to (true):
 
-mongoose.connect('mongodb+srv://amminabhavip13:cdRDp5ZQdkKcE2zZ @cluster0.4jtt2lt.mongodb.net/');     // we connect our application with the (mongodb) database through the (mongoose) library:
+mongoose.connect('mongodb+srv://amminabhavip13:cdRDp5ZQdkKcE2zZ @cluster0.4jtt2lt.mongodb.net/habit');     // we connect our application with the (mongodb) database through the (mongoose) library:
 
 const db = mongoose.connection;
 
