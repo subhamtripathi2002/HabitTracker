@@ -1,0 +1,9 @@
+/* html page css file  */
+body {
+  margin: 0;
+}
+body #layout-main {
+  height: 100%;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/711/318/361/white-purple-abstraction-wallpaper-preview.jpg");
+  background-size: cover;
+}

@@ -1,0 +1,34 @@
+<header id="layout-header">
+    <nav>
+
+ <!-- authenticaion links are added here in the navbar 
+ if user is logged in then show the name and sign out link else show sign in link  -->
+ 
+        <div class="auth-links">
+            <ul>
+                <% if (locals.user){ %>
+                    <li>
+                    <h3><a href="/"><%= user.name %></a></h3>
+
+
+                    </li>
+                    <li>
+                        <h3> <a href="/users/sign-out">Sign Out</a> </h3>
+                    </li>
+                    <% }else{ %>
+                        
+                        <li id="headerSign">
+                            <h3 class="sign-in">  <a href="/users/sign-in">Sign In</a></h3>
+                        </li>
+                      
+                    
+                    
+ <% } %>
+                       
+            </ul>
+        </div>
+    </nav>
+
+
+
+</header>

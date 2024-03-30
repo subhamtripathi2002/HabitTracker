@@ -1,0 +1,92 @@
+/* Home Page CSS */
+#home-container {
+  display: flex;
+}
+#home-container #feed-posts {
+  width: 70%;
+  padding: 10px;
+}
+#home-container #user-friends {
+  width: 20%;
+  padding: 10px;
+  border-left: 2px solid rgb(241, 241, 27);
+  height: 100%;
+}
+/* buttons home page css  */
+#dash-buttton a{
+  color: white;
+  background-color: rgb(188, 163, 215);
+  font-size: 30px;
+}
+#dash-buttton a:hover{
+  color: rgba(0, 187, 255, 0.449);
+  background-color: rgb(249, 249, 242);
+}
+/* rotating cube css  */
+.animation-container {
+  margin-top: 200px;
+  margin-left: 700px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+}
+.cube {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+}
+.face {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  border: 2px solid rgb(16, 1, 1);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  opacity: 0.8;
+}
+/*cubes face color and transforms */
+.front {
+  background-color: #eb3dd1;
+  transform: translateZ(150px);
+}
+
+.back {
+  background-color: #33ff57;
+  transform: translateZ(-150px);
+}
+
+.top {
+  background-color: #5733ff;
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.bottom {
+  background-color: #ff3333;
+  transform: rotateX(-90deg) translateZ(150px);
+}
+
+.left {
+  background-color: #33ffff;
+  transform: rotateY(-90deg) translateZ(150px);
+}
+
+.right {
+  background-color: #abb617;
+  transform: rotateY(90deg) translateZ(150px);
+}
+/* rotation animation  */
+@keyframes rotate {
+  0% {
+      transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+      transform: rotateX(360deg) rotateY(360deg);
+  }
+}

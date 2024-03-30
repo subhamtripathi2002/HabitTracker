@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="/css/home.css">
+
+<div id="home-container">
+  <section id="feed-posts">
+
+    <% if( !locals.user) { %>
+      <h1 id="habitid">HABIT TRACKER APP &#8986;</h1>
+
+      <section class="rotatingCube">
+        <div class="container">
+          <div class="animation-container">
+            <div class="cube">
+              <div class="face front">Sleep &#128164;</div>
+              <div class="face back">Running 	&#127939;</div>
+              <div class="face top">Yoga &#129496;</div>
+              <div class="face bottom">Study &#129299;</div>
+              <div class="face left">Drink Water 	&#129371;</div>
+              <div class="face right">Exercise &#128170;</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <% } %>
+
+
+        <% if(locals.user){ %>
+
+          <div class="card text-center ">
+            <div class="card-body">
+              <h3 id="card-title">Habit Tracker!</h3>
+              <p id="card-text" style="font-size: 20px;" class="border border-primary">
+               Track Your Daily Habits and Achieve Your Goals!
+              </p>
+              <p class="card-text" style="font-size: 20px;" >
+              Check Your Progress and Stay Motivated!
+              </p>
+              <button id="dash-buttton">
+              <a href="/habit/dashboard" >Open Habit tracker Dashboard</a>
+            </button>
+            </div>
+          </div>
+
+          <% } %>
+
+
+  </section>
+
+</div>
