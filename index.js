@@ -54,7 +54,7 @@ app.use(session({
     },
     store: new MongoStore(
         {
-            mongoUrl:'mongodb+srv://amminabhavip13:cdRDp5ZQdkKcE2zZ @cluster0.4jtt2lt.mongodb.net/' ,
+            mongoUrl:'mongodb+srv://amminabhavip13:cdRDp5ZQdkKcE2zZ @cluster0.4jtt2lt.mongodb.net/habit' ,
             autoRemove: 'disabled'
         
         },
